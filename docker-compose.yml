@@ -27,8 +27,8 @@ services:
       - pretalx-database:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: veryunsecureplschange # same password as one that you will put in pretalx.cfg file later on
-      POSTGRES_USER: pretalx
-      POSTGRES_DB: pretalx
+      PRETALX_DB_USER: pretalx
+      PRETALX_DB_PASS: pretalx
 
   redis:
     image: redis:latest
